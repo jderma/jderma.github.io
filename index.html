@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your perfect furry friend from our selection of adoptable dogs.">
+    <meta name="keywords" content="dog adoption, adopt a dog, dogs for adoption, pet adoption">
+    <title>Dogs for Adoption</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff8dc, #ffecb3, #ffcc80);
+            /* Light soft yellow gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #ffeb3b;
+            /* Yellow accent */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #fdd835;
+            /* Darker yellow */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 3px solid #ffeb3b;
+            /* Yellow accent */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #fbc02d;
+            /* Light orange-yellow */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .container-secondary {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #ffd54f;
+            /* Light orange-yellow */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ffb300;
+            /* Darker orange-yellow */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dogs for Adoption</h1>
+        <p>Watch the video below or click the button to view more dogs for adoption.</p>
+        <video autoplay loop muted controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="content.html" class="btn">View More Dogs</a>
+    </div>
+    <div class="container-secondary">
+        <h1>Adopt a Dog Today!</h1>
+        <p>Contact us to find your perfect furry friend.</p>
+        <a href="https://www.pasadosafehaven.org/adopt/?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLPJYzEauMezKb4ipCnqRrK-yiDs5U5tADW4PvQvaGCklbmhjLh9n60aAmHeEALw_wcB"
+            class="btn-secondary">Contact Us</a>
+    </div>
+    <footer>
+        &copy; 2024 Dog Adoption Center. All rights reserved.
+    </footer>
+</body>
+
+</html>
